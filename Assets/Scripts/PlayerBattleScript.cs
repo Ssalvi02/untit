@@ -84,7 +84,7 @@ public class PlayerBattleScript : MonoBehaviour
         }
 
         //Check se ta no chao
-        is_grounded = Physics2D.OverlapBox(cc.bounds.center, cc.bounds.size, 0f, GroundLayer);
+        is_grounded = Physics2D.Raycast(cc.bounds.center, Vector2.down, 0.3f, GroundLayer);
 
 
         //Flipa sprite
@@ -181,7 +181,6 @@ public class PlayerBattleScript : MonoBehaviour
         }
 
     }
-
     void FixedUpdate()
     {
         if (can_control)
