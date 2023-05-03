@@ -31,7 +31,7 @@ public class PlayerBattleScript : MonoBehaviour
     [SerializeField] private float dash_vel;
     [SerializeField] private float dash_time;
     [SerializeField] private Vector2 dash_dir;
-    [SerializeField] private bool is_dashing;
+    public bool is_dashing;
     [SerializeField] private bool dash_unlocked = false;
     [SerializeField] private bool can_dash = true;
     public TrailRenderer tr;
