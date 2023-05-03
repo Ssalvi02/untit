@@ -264,6 +264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616bf668cd178ae4c967845976940b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  total_enemy_health: 5
+  current_enemy_health: 5
+  enemy_dmg: 2
   player: {fileID: 0}
   player_loc: {fileID: 0}
   cam: {fileID: 0}
@@ -1840,6 +1843,9 @@ MonoBehaviour:
     m_Bits: 64
   sr: {fileID: 0}
   rb: {fileID: 0}
+  total_player_health: 10
+  current_player_health: 10
+  player_dmg: 3
   speed: 6
   horiz_move: 0
   vert_move: 0
@@ -2026,7 +2032,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &1892436157
 Animator:
   serializedVersion: 4

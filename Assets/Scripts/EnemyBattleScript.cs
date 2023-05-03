@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyBattleScript : MonoBehaviour
 {
+    [Header("Attributes")]
+    [SerializeField] private int total_enemy_health;
+    public int current_enemy_health;
+    public int enemy_dmg;
+    [Header("Misc")]
     [SerializeField] PlayerBattleScript player;
     [SerializeField] Transform player_loc;
     [SerializeField] Camera cam;

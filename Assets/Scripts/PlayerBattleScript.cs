@@ -10,6 +10,11 @@ public class PlayerBattleScript : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 velsize;
 
+    [Header("Attributes")]
+    [SerializeField] private int total_player_health;
+    public int current_player_health;
+    public int player_dmg;
+
     [Header("Movement")]
     [SerializeField] private float speed;
     [SerializeField] private float horiz_move;
