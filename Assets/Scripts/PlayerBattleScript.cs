@@ -78,6 +78,10 @@ public class PlayerBattleScript : MonoBehaviour
 
             if (is_dashing)
             {
+                if(dash_dir.y > 0)
+                {
+                    StartCoroutine(QuickDrag());
+                }
                 rb.velocity = dash_dir.normalized * dash_vel;
                 return;
             }
@@ -198,6 +202,14 @@ public class PlayerBattleScript : MonoBehaviour
         can_control = true;
         tr.emitting = false;
         is_dashing = false;
+    }
+
+    private IEnumerator QuickDrag()
+    {
+        yield return new WaitForSeconds(dash_time);
+        rb.drag = 10f;
+        yield return new WaitForSeconds(0.1f);
+        rb.drag = 1.5f;
     }
 
 
