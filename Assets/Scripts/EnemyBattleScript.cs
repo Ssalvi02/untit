@@ -22,8 +22,8 @@ public class EnemyBattleScript : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
-        player = GameObject.Find("PlayerBattle").GetComponent<PlayerBattleScript>();
-        player_loc = GameObject.Find("PlayerBattle").GetComponent<Transform>();
+        player = GameObject.Find("Player").GetComponent<PlayerBattleScript>();
+        player_loc = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
